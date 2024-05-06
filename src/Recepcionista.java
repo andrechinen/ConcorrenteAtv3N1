@@ -73,7 +73,7 @@ public class Recepcionista extends Thread {
                 }
             }
         }
-        System.out.println("\033[41mNão há quartos disponíveis\033[0m");
+        System.out.println("\033[43mNão há quartos disponíveis\033[0m");
         setOcupado(false);
         return false;
     }

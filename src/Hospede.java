@@ -52,7 +52,7 @@ public class Hospede extends Thread {
                 }
             }
 
-            System.out.println("\033[41mHóspede " + id + " não conseguiu fazer check-in. Saindo e voltando mais tarde...\033[0m");
+            System.out.println("\033[43mHóspede " + id + " não conseguiu fazer check-in. Saindo e voltando mais tarde...\033[0m");
             tentativas++; // Incrementa o contador de tentativas
 
             // Aguarda um tempo antes de tentar fazer o check-in novamente
@@ -69,7 +69,7 @@ public class Hospede extends Thread {
             aux += "[" + hospedes[j].getNumero() + "] ";
         }
 
-        System.out.println("\033[41mHóspedes " + aux
+        System.out.println("\033[43mHóspedes " + aux
                 + "não conseguiram fazer check-in após duas tentativas. Deixando uma reclamação e indo embora.\033[0m");
 
     }
